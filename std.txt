@@ -1,0 +1,37 @@
+jsx 는 html 코드가 아니며 div항 안에 react로 작성한 코드를 넣어주는 역할을 함
+
+propTypes import 하여 타입검사 가능
+obj, string, number 등
+
+원하는 곳에 
+Name.propTyeps로 선언하여 사용가능
+각 element: = PropTypes."TYPES"로 사용가능
+isRequired 가 있을경우 필수 element
+아닐경우 TYPE 만 검사
+
+여러가지 옵션 있음 react docs에서 볼 것
+
+react는 class component의 render()를 자동적으로 실행
+class는 state를 가지고 이는 동적이고 obj임 -> 이 때문에 사용
+
+<button > 내부에 리스너를 넣을 수 있고, 클래스 내의 메서드 호출 가능
+이때 method()일 경우 함수가 즉시 실행되나, method의 경우 리스너가 작동할 때만 실행
+
+state 내의 변수는 setState를 통해서 변경해야함, 그리고 render()가 다시 호출
+변경시 current => ({}) 의 형태의 람다식 사용
+
+
+class component lifecycle
+mounting() : 페이지 호출시
+    contructor()
+    render()
+    componentDidMount()
+
+updating() : 사용자가 무언가를 선택
+    render()
+    componentDidUpdate()
+
+unmounting() : 컴포넌트가 죽을때
+    componentWillUnmount() : 실제로 작동하나 F5시 console에 안뜸
+
+axios는 fetch의 한 layer위
