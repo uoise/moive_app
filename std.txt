@@ -35,3 +35,26 @@ unmounting() : 컴포넌트가 죽을때
     componentWillUnmount() : 실제로 작동하나 F5시 console에 안뜸
 
 axios는 fetch의 한 layer위
+
+{username}.github.io/{path} -> 가 홈페이지
+script에 추가 
+deploy는 gh-pagees -d build
+predeploy는 rpm run build
+
+npm run deploy로 실행
+
+router : url을 확인 후 명령에 따라 컴포넌트를 불러오는 역할
+
+router는 입력한 component와 일치하는 모든 route의 component를 전부 가져옴
+ex) /home, /home/intro
+exact={true}로 완전히 일치할때만 불러올 수 있음
+
+navigation을 href를 사용하면 html을 다시 로딩하여 react가 중단되게 함, 이는 새로고침을 유발
+
+Link to=""를 이용하여 새로고침 없이 이동가능
+단 이는 router안에 존재 해야 함
+footer를 사용가능하다 -> 뭔지 모름
+
+
+route props : 뭔진모르지만 router가 전달해줌
+
